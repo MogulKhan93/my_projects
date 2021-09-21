@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block lin %}
+    <link href="{% static 'rate/css/style.css' %}" rel="stylesheet"
+          type="text/css">
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="head mt-3">Поточний курс валют</h1>
+    {% if request.user.is_authenticated %}
+    <div class="frame">
+        <button class="custom-btn btn-3"><a href="{% url 'rate-list' %}"
+                                            style="color: #ffffff;
+                                                   text-decoration: none;
+                                                   font-size: 40px">Отримати</a>
+        </button>
+    </div>
+    {% endif %}
+{% endblock %}

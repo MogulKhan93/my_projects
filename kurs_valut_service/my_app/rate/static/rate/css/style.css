@@ -1,0 +1,75 @@
+.head {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 65px;
+  font-family: "Cormorant Garamond", serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 260px;
+  height: 80px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 3 */
+.btn-3 {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+  font-size: 25pt;
+  top: 15px;
+}
+.btn-3:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-3:hover {
+  color: #fff;
+}
+.btn-3:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-3:active {
+  top: 2px;
+}
+

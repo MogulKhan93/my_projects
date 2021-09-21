@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="text-center mt-3">Реєстрація:</h1>
+    <div class="container" style="width: 900px">
+        <form method="post" action="{% url 'registration' %}" class="form-control">
+            {% csrf_token %}
+            {{ form }}
+            <button class="btn btn-warning" type="submit">Створити</button>
+        </form>
+    </div>
+{% endblock %}
