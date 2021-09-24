@@ -108,7 +108,7 @@ class Login(View):
         if form.is_valid():
             username = form.get_user()
             login(request, username)
-            messages.success(request, f'Ласкаво просимо {username}')
+            messages.success(request, f'Ласкаво просимо, {username}')
             return redirect('main')
         messages.error(request, 'Помилка входу!')
         return render(request, 'rate/login.html', {'form': form})
