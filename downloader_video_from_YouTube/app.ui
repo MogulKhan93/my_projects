@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>YouTube Downloader</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 77, 113);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="exec_of_the_process">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>15</y>
+      <width>350</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #A4004D;
+background-color: rgb(0, 77, 113);
+color: white;</string>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Execution process..</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="video_link">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>185</y>
+      <width>350</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #A4004D;
+background-color: rgb(0, 77, 113);
+color: white;</string>
+    </property>
+    <property name="placeholderText">
+     <string>https://www.youtube.com/VideoID</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_but">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>225</y>
+      <width>350</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 2px solid #A4004D;
+background-color: rgb(0, 77, 113);
+color: white;
+}
+QPushButton:hover{
+border: 2px solid #A4004D;
+background-color: rgb(0, 64, 94);
+color: white;
+}
+QPushButton:pressed{
+border: 2px solid white;
+background-color: rgb(0, 64, 94);
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Download video</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_but">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>265</y>
+      <width>350</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 2px solid #A4004D;
+background-color: rgb(0, 77, 113);
+color: white;
+}
+QPushButton:hover{
+border: 2px solid #A4004D;
+background-color: rgb(0, 64, 94);
+color: white;
+}
+QPushButton:pressed{
+border: 2px solid white;
+background-color: rgb(0, 64, 94);
+color: white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Select a folder to save</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
