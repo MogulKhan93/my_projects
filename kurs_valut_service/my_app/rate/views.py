@@ -6,6 +6,7 @@ from django.contrib.auth import login, logout
 from .models import Rate, date_now, get_rates
 from .forms import *
 import psycopg2
+import os
 
 
 def create_connection(db_name, db_user, db_password, db_host, db_port):
@@ -35,7 +36,8 @@ def execute_query(connection, query):
 
 
 conn = create_connection(
-    'ratenow', 'khan3290', 'khan12985', '127.0.0.1', '5432'
+    os.environ.get('DB_RATE_NAME'), os.environ.get('DB_RATENOW_USERNAME'),
+    os.environ.get('DB_RATENOW_PASSWORD'), '127.0.0.1', '5432'
 )
 delete_comment = 'delete from "public".rate_rate'
 execute_query(conn, delete_comment)
